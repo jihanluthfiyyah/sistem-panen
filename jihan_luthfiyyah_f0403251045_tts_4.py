@@ -12,3 +12,12 @@ def hitung_total(panen_padi, panen_jagung):
 
 total = hitung_total(177, 50)
 print("Total hasil panen:", total, "kg")
+def hitung_total(panen_padi, panen_jagung):
+    return panen_padi + panen_jagung
+
+def hitung_potongan(total, persen_potongan):
+    return total - (total * persen_potongan / 100)
+
+total = hitung_total(150, 50)
+print("Total hasil panen:", total, "kg")
+print("Total bersih setelah potongan 10%:", hitung_potongan(total, 10), "kg")
